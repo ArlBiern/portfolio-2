@@ -1,0 +1,158 @@
+$mainFont:  'Lato', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$pink: #ed145b;
+$lightGrey: #f4f4f4;
+$grey: #5a5a5a;
+$darkGrey: #2b2b2b;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 2000px;
+	margin: 0 auto;
+	font-family: $mainFont;
+}
+
+.container {
+	max-width: 1200px;
+}
+
+.container::before,
+.container::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+// ===== HEADER ===== //
+
+header {
+	background: url("../images/background.jpg") center 0/cover no-repeat;
+	height: auto;
+	position: relative;
+	z-index: 2;
+	.container {
+		margin: 0 auto;
+		height: auto;
+		.logo {
+			float: left;
+			font-family: $roboto;
+			p {
+				margin-top: 35px;
+				font-size: 25px;
+				color: #fff;
+				font-weight: 700;
+				letter-spacing: 2px;
+				span {
+					color: $pink;
+					letter-spacing: 3px;
+				}
+			}
+		}
+		.nav {
+			font-family: $roboto;
+			ul {
+				list-style: none;
+				float: right;
+				margin-top: 38px;
+				&:first-child {
+					color: $pink;
+				}
+				li {
+					display: inline-block;
+					line-height: 22px;
+					a {
+						text-decoration: none;
+						letter-spacing: 1px;
+						font-weight: bold;
+						color: #fff;
+						margin: 0 10px;
+						&.active {
+							color: $pink;
+						}
+						&:hover {
+							color: $pink;
+						}
+					}
+				}
+			}
+		}
+	}
+	.nav-bottom {
+		font-family: $mainFont;
+		h1 {
+			margin-top: 190px;
+			color: #fff;
+			text-align: center;
+			font-size: 46px;
+			text-transform: uppercase;
+			font-weight: 300;
+			span {
+				font-weight: 700;
+				letter-spacing: 2px;
+			}
+			&:after {
+				content: "";
+				width: 200px;
+				height: 3px;
+				background: $pink;
+				display: block;
+				margin: 0 auto;
+				margin-top: 35px;
+				margin-bottom: 40px;
+			}
+		}
+		p {
+			font-weight: 300;
+			font-size: 22px;
+			text-align: center;
+			color: #fff;
+			margin-top: 15px;
+		}
+		a {
+			text-decoration: none;
+			color: #fff;
+			font-size: 15px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-weight: 700;
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+			margin-top: 65px;
+			margin-bottom: 230px;
+			width: 200px;
+			height: 50px;
+			line-height: 50px;
+			border-radius: 25px;
+			background-color: $pink;
+			cursor: pointer;
+			&:hover {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.strip {
+	margin: 0 auto;
+	position: relative;
+	top: -39px;
+	z-index: 1;
+	@media (max-width: 1600px) {
+		top: -31px;
+	}
+	@media (max-width: 1200px) {
+		top: -24px;
+	}
+	img {
+		fit-object: cover;
+		width: 100%;
+		min-height: 39px;
+	}
+}
