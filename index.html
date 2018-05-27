@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Portfolio A.B. 2018</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Roboto:100,400,700" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.prefixer.css">
 </head>
 <body>
@@ -14,12 +15,18 @@
 				<p><span>/// </span>CompanyName</p>
 			</div>
 			<div class="nav">
+				<input id="burger" type="checkbox">
+				<label for="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
 				<ul>
 					<li><a href="" class="active">Home</a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Our Services</a></li>
-					<li><a href="">Prices</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#aboutUs">About Us</a></li>
+					<li><a href="#ourServices">Our Services</a></li>
+					<li><a href="#pricesSection">Prices</a></li>
+					<li><a href="#optionsSection">Options</a></li>
 				</ul>
 			</div>
 		</div>
@@ -32,6 +39,321 @@
 			</div>
 		</div>
 	</header>
-	<div class="strip"><img src="images/main-strip.jpg"></div>
+	<div class="strip"><img src="images/main-strip.jpg" alt="background strip"></div>
+	<section class="about" id="aboutUs">
+		<div class="container">
+			<h2>Get ready for the latest developments!</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ullam molestias ex, vitae doloribus, quia nihil praesentium dolore, deserunt consectetur eum veritatis! Ipsum reprehenderit illo iusto blanditiis consequatur quibusdam consequuntur, provident libero accusamus, ullam, adipisci a. Quasi quibusdam, alias dolorum, voluptatum impedit, amet aspernatur vel odio corporis fugit, deserunt rem.</p>
+			<a>See more information<i class="fas fa-caret-right"></i></a>
+		</div>
+		<div class="laptop">
+				<img src="images/about-screen.png" alt="Laptop screen">
+				<img src="images/about-laptop.png" alt="Laptop bottom">
+		</div>
+	</section>
+	<section class="services" id="ourServices">
+		<div class="container">
+			<div class="headline">
+				<h2>Our Services</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est voluptatibus cum, dolore placeat nemo. Deleniti tempora, natus omnis fuga hic ea eos nulla ipsam sapiente repellendus aliquam, nisi possimus magni.</p>
+			</div>
+			<div class="icon col-l-3 col-m-3 col-s-6 col-xs-12">
+				<img src="images/item-1.png" alt="fully editable">
+				<p>Fully editable</p>
+			</div>
+			<div class="icon col-l-3 col-m-3 col-s-6 col-xs-12">
+				<img src="images/item-2.png" alt="free download">
+				<p>Free download</p>
+			</div>
+			<div class="icon col-l-3 col-m-3 col-s-6 col-xs-12">
+				<img src="images/item-3.png" alt="modern design">
+				<p>Modern design</p>
+			</div>
+			<div class="icon col-l-3 col-m-3 col-s-6 col-xs-12">
+				<img src="images/item-4.png" alt="100% responsive">
+				<p>100% responsive</p>
+			</div>
+		</div>
+	</section>
+	<section class="slideshow">
+		<div class="container">
+			<div class="slideshow-container">
+				<div class="slides">
+					<div class="quote-center">
+						<img src="images/quote-up.png" alt="Up quote mark">
+						<p class="slide-text">Don't cry because it's over, smile because it happened.</p>
+						<img src="images/quote-down.png" alt="Down quote mark">
+					</div>
+					<p class="author">Dr. Seuss</p>
+				</div>
+				<div class="slides">
+					<div class="quote-center">
+						<img src="images/quote-up.png" alt="Up quote mark">
+						<p class="slide-text">Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.</p>
+						<img src="images/quote-down.png" alt="Down quote mark">
+					</div>
+					<p class="author">Albert Einstein</p>
+				</div>
+				<div class="slides">
+					<div class="quote-center">
+						<img src="images/quote-up.png" alt="Up quote mark">
+						<p class="slide-text">Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.</p>
+						<img src="images/quote-down.png" alt="Down quote mark">
+					</div>
+					<p class="author">Bernard M. Baruch</p>
+				</div>
+				<div class="slides">
+					<div class="quote-center">
+						<img src="images/quote-up.png" alt="Up quote mark">
+						<p class="slide-text">You only live once, but if you do it right, once is enough.</p>
+						<img src="images/quote-down.png" alt="Down quote mark">
+					</div>
+					<p class="author">Mae West</p>
+				</div>
+			</div>
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<div class="dots">
+				<span class="dot" onClick="currentSlide(1)"></span>
+				<span class="dot" onClick="currentSlide(2)"></span>
+				<span class="dot" onClick="currentSlide(3)"></span>
+				<span class="dot" onClick="currentSlide(4)"></span>
+			</div>
+		</div>
+	</section>
+	<section class="prices" id="pricesSection">
+		<div class="container">
+			<div class="headline">
+				<h2>Check our prices!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nostrum alias officia minima ipsum dicta voluptate ad commodi similique nesciunt beatae, libero, itaque, deleniti sunt.</p>
+			</div>
+			<div class="price_div col-l-3 col-m-3 col-s-6 col-xs-12">
+				<div class="price_window">
+					<div class="price_cost">
+						<h4>$<span>19</span></h4>
+						<p>per month</p>
+					</div>
+					<div class="price_details">
+						<h3>Standard</h3>
+						<p>5 Projects</p>
+						<p>200 MB Storage</p>
+						<p>Notification settings</p>
+						<p>Password protection</p>
+						<a href="#">buy now</a> 
+					</div>
+				</div>
+			</div>
+			<div class="price_div col-l-3 col-m-3 col-s-6 col-xs-12">
+				<div class="price_window">
+					<div class="price_cost">
+						<h4>$<span>39</span></h4>
+						<p>per month</p>
+					</div>
+					<div class="price_details">
+						<h3>Business</h3>
+						<p>15 Projects</p>
+						<p>1 GB Storage</p>
+						<p>Notification settings</p>
+						<p>Password protection</p>
+						<a href="#">buy now</a> 
+					</div>
+				</div>
+			</div>
+			<div class="price_div col-l-3 col-m-3 col-s-6 col-xs-12">
+				<div class="price_window">
+					<div class="price_cost">
+						<h4>$<span>59</span></h4>
+						<p>per month</p>
+					</div>
+					<div class="price_details">
+						<h3>Premium</h3>
+						<p>30 Projects</p>
+						<p>2 GB Storage</p>
+						<p>Notification settings</p>
+						<p>Password protection</p>
+						<a href="#">buy now</a> 
+					</div>
+				</div>
+			</div>
+			<div class="price_div col-l-3 col-m-3 col-s-6 col-xs-12">
+				<div class="price_window">
+					<div class="price_cost">
+						<h4>$<span>99</span></h4>
+						<p>per month</p>
+					</div>
+					<div class="price_details">
+						<h3>Unlimited</h3>
+						<p>Unlimited Projects</p>
+						<p>Unlimited Storage</p>
+						<p>Notification settings</p>
+						<p>Password protection</p>
+						<a href="#">buy now</a> 
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="parameters">
+		<div class="container">
+			<div class="param col-l-4 col-m-6 col-s-12 col-xs-12">
+				<div class="param_item">
+					<img src="images/item-5.png" alt="screen">
+				</div>
+				<div class="param_text">
+					<h4>High resolution</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit distinctio animi.</p>
+				</div>
+			</div>
+			<div class="param col-l-4 col-m-6 col-s-12 col-xs-12">
+				<div class="param_item">
+					<img src="images/item-7.png" alt="camera">
+				</div>
+				<div class="param_text">
+					<h4>Photography</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit distinctio animi.</p>
+				</div>
+			</div>
+			<div class="param col-l-4 col-m-6 col-s-12 col-xs-12">
+				<div class="param_item">
+					<img src="images/item-9.png" alt="screen">
+				</div>
+				<div class="param_text">
+					<h4>Easy to customize</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit distinctio animi.</p>
+				</div>
+			</div>
+			<div class="param col-l-4 col-m-6 col-s-12 col-xs-12">
+				<div class="param_item">
+					<img src="images/item-6.png" alt="screen">
+				</div>
+				<div class="param_text">
+					<h4>24/7 support</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit distinctio animi.</p>
+				</div>
+			</div>
+			<div class="param col-l-4 col-m-6 col-s-12 col-xs-12">
+				<div class="param_item">
+					<img src="images/item-8.png" alt="screen">
+				</div>
+				<div class="param_text">
+					<h4>Powerfull theme</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit distinctio animi.</p>
+				</div>
+			</div>
+			<div class="param col-l-4 col-m-6 col-s-12 col-xs-12">
+				<div class="param_item">
+					<img src="images/item-10.png" alt="screen">
+				</div>
+				<div class="param_text">
+					<h4>SEO optimization</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fugit distinctio animi.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="join">
+		<div class="container">
+			<div class="join_div">
+				<p>become a part of <span>Our company</span> community today</p>
+				<div>
+					<a href="#">join us</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="updates" id="optionsSection">
+		<div class="container">
+			<div class="headline">	
+				<h2>Our latest capabilities!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nostrum alias officia minima ipsum dicta voluptate ad commodi similique nesciunt beatae, libero, itaque, deleniti sunt.</p>
+			</div>
+			<div class="updates_gallery">
+				<div class="gallery-outline col-l-4">
+					<div class="gallery_item">
+						<figure class="gallery_img">
+							<img src="images/pic-1.jpg" alt="alarm-phone"/>
+							<figcaption>
+								<h3> 24/7 <span> suppport </span></h3>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id quod sequi!</p>
+					</div>
+				</div>
+				<div class="gallery-outline col-l-4">
+					<div class="gallery_item">
+						<figure class="gallery_img">
+							<img src="images/pic-2.png" alt="architecture"/>
+							<figcaption>
+								<h3> Newest <span>technology </span></h3>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id quod sequi!</p>
+					</div>
+				</div>
+				<div class="gallery-outline col-l-4">
+					<div class="gallery_item">
+						<figure class="gallery_img">
+							<img src="images/pic-9.png" alt="grey city"/>
+							<figcaption>
+								<h3> global <span> reach </span></h3>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id quod sequi!</p>
+					</div>
+				</div>
+				<div class="gallery-outline col-l-4">
+					<div class="gallery_item">
+						<figure class="gallery_img">
+							<img src="images/pic-4.png" alt="girl photo"/>
+							<figcaption>
+								<h3> focusing on <span> your needs </span></h3>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id quod sequi!</p>
+					</div>
+				</div>
+				<div class="gallery-outline col-l-4">
+					<div class="gallery_item">
+						<figure class="gallery_img">
+							<img src="images/pic-5.png" alt="river"/>
+							<figcaption>
+								<h3> going with <span> the flow </span></h3>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id quod sequi!</p>
+					</div>
+				</div>
+				<div class="gallery-outline col-l-4">
+					<div class="gallery_item">
+						<figure class="gallery_img">
+							<img src="images/pic-6.png" alt="train station"/>
+							<figcaption>
+								<h3> reaching <span> destination </span></h3>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+						<h4>Lorem ipsum dolor sit</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non id quod sequi!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>Copyright by ComapnyName 2018</p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
