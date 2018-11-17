@@ -37,6 +37,7 @@
     "browser-sync": "^2.19.0",
     "glob-run": "^0.1.6",
     "html-validator-cli": "^3.2.0",
+    "mime": "^2.3.1",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.7.2",
     "nu-html-checker": "^0.1.0",
