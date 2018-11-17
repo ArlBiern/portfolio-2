@@ -45,7 +45,12 @@
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
     "parallelshell": "^3.0.2",
+    "randomatic": "^3.1.1",
     "rimraf": "^2.6.2",
-    "sshpk": "^1.15.2"
+    "sshpk": "^1.15.2",
+    "superagent": "^4.0.0"
+  },
+  "devDependencies": {
+    "hoek": "^6.0.3"
   }
 }
